@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="GradeStyle.css">
+  <script src="GradeScript.js"></script>
+	<title>For all your angsty needs</title>
+	<center><h1 class = "Title">Grade Calculator</h1></center>
+  <center><div class = "Main">
+	<center><p><i>For all your College Angst Needs...</i></p></center><br>
+  <center><select id = "dropdown">
+  <option value="CS1371">CS1371</option>
+  <option value="AE1350">AE1350</option>
+  <option value="AE1601">AE1601</option>
+  <option value="AE1770">AE1770</option>
+  <option value="CHEM1211"> CHEM1211</option>
+  <option value="CHEM1212">CHEM1212</option>
+  <option value="CHEM1315">CHEM1315</option>
+  <option value="CHEM2311">CHEM2311</option>
+  <option value="ECON1101">ECON1101</option>
+  <option value="ECON2100">ECON2100</option>
+  <option value="ECON2101">ECON2101</option>
+  <option value="ENGL1101">ENGL1101</option>
+  <option value="ENGL1102">ENGL1102</option>
+  <option value="MATH1111"> MATH1111</option>
+  <option value="MATH1113">MATH1113</option>
+  <option value="MATH1501">MATH1501</option>
+  <option value="MATH1502">MATH1502</option>
+  <option value="PHYS2211">PHYS2211</option>
+  <option value="PHYS2212">PHYS2212</option>
+  <option value="PHYS2213">PHYS2213</option>
+  <option value="PHIL2010">PHIL2010</option>
+  <option value="PHIL2025">PHIL2025</option>
+  <option value="PSYC2005"> PSYC2005</option>
+  <option value="PSYC2020">PSYC2020</option>
+  <option value="PSYC2103"> PSYC2103</option>
+  <option value="NRE2110"> NRE2110</option>
+  <option value="NRE2698">NRE2698</option>
+  <option value="CS1331">CS1331</option>
+  <option value="CS1332">CS1332</option>
+  <option value="ECE1010"> ECE1010</option>
+  <option value="ECE2020">ECE2020</option>
+  <option value="ECE2026">ECE2026</option>
+  </select></center><br>
+  <center><input id = "PickClass" type="submit" value="Select" onclick="setWeights();"></center><br>
+	<center><body>
+<table id="RealTable" style="width:50%">
+  <tr>
+    <th style="text-align: left; font-size: 20px; text-decoration: underline;">Category</th>
+    <th style="text-align: left; font-size: 20px; text-decoration: underline;">Weight</th> 
+    <th style="text-align: left; font-size: 20px; text-decoration: underline;">My Score</th>
+  </tr>
+  <tr>
+    <td>Tests:</td>
+    <td><input type="number" id="TestWeight" placeholder="Number from 1-100">%</td> 
+    <td><input type="text" id="TestScore" placeholder="List: 1-100%"></td>
+  </tr>
+  <tr>
+    <td>Homework:</td>
+    <td><input type="number" id="HomeworkWeight" placeholder="Number from 1-100">%</td> 
+    <td><input type="text" id="HomeworkScore" placeholder="List: 1-100%"></td>
+  </tr>
+  <tr>
+    <td>Quiz:</td>
+    <td><input type="number" id="QuizWeight" placeholder="Number from 1-100">%</td> 
+    <td><input type="text" id="QuizScore" placeholder="List: 1-100%"></td>
+  </tr>
+  <tr>
+    <td>Class Participation:</td>
+    <td><input type="number" id="ClassParticipationWeight" placeholder="Number from 1-100">%</td> 
+    <td><input type="text" id="ClassParticipationScore" placeholder="List: 1-100%"></td>
+  </tr>
+  <tr>
+    <td>Extra Credit:</td>
+    <td></td> 
+    <td><input type="text" id="ExtraCreditScore" placeholder="List: 1-100%"></td>
+  </tr>
+  <tr>
+    <td>Final Exam:</td>
+    <td><input type="number" id="FinalExamWeight" placeholder="Number from 1-100">%</td> 
+    <td></td>
+  </tr>
+</table>
+	</body></center>
+	<br>
+	<center><p>Save me Grade Calculator!!! Calculate what I need to get a <input type="number" id="Calculate" placeholder="Number from 1-100">% in this class!</p></center><br>
+	<center><input id = "submit" type="submit" value="Submit" onclick="calcGrade();"></center><br>
+  <center><div id="Calc"></div></center><br>
+  </div></center>
+</head>
+</html>
